@@ -3,8 +3,8 @@ from flask_bootstrap import Bootstrap4
 
 
 
-
 app = Flask(__name__)
+app.secret_key = "Hello World"
 
 bootstrap = Bootstrap4(app)
 
