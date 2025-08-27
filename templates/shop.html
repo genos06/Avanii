@@ -1,0 +1,65 @@
+{% include "header.html" %}
+
+    <!-- ##### Breadcrumb Area Start ##### -->
+    <div class="breadcrumb-area">
+        <!-- Top Breadcrumb Area -->
+        <div class="top-breadcrumb-area bg-img bg-overlay d-flex align-items-center justify-content-center" style="background-image: url('{{ url_for('static', filename='img/bg-img/23.jpg') }}');">
+            <h2>Shop</h2>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="{{ url_for('home') }}"><i class="fa fa-home"></i> Home</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Shop</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ##### Breadcrumb Area End ##### -->
+
+    <!-- ##### Shop Area Start ##### -->
+    <section class="shop-page section-padding-0-100">
+        <div class="container">
+            <div class="row">
+                <!-- Shop Sorting Data -->
+                <div class="col-12">
+                    <div class="shop-sorting-data d-flex flex-wrap align-items-center justify-content-between">
+                        <!-- Shop Page Count -->
+                        <div class="shop-page-count">
+                            <p>Showing 1–9 of 72 results</p>
+                        </div>
+                        <!-- Search by Terms -->
+                        <div class="search_by_terms">
+                            <form action="#" method="post" class="form-inline">
+                                <select class="custom-select widget-title">
+                                  <option selected>Short by Popularity</option>
+                                  <option value="1">Short by Newest</option>
+                                  <option value="2">Short by Sales</option>
+                                  <option value="3">Short by Ratings</option>
+                                </select>
+                                <select class="custom-select widget-title">
+                                  <option selected>Show: 0</option>
+                                  <option value="1">12</option>
+                                  <option value="2">18</option>
+                                  <option value="3">24</option>
+                                </select>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+              <div><h2><center>Coming Soon!</center></h2></div>
+             
+            
+            
+           
+        </div>
+    </section>
+    <!-- ##### Shop Area End ##### -->
+
+{% include "footer.html" %}

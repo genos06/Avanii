@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <!-- Title -->
+    <title>Avanii</title>
+    <link rel="icon" href="static/img/core-img/favicon.ico">
+
+    {{ bootstrap.load_css() }}
+    
+    <!-- Favicon -->
+
+    <!-- Core Stylesheet -->
+    <link rel="stylesheet" href="static/style.css">
+
+    <!-- Add Montesa font from Google Fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <style>
+   
+   body {
+        font-family: 'Montserrat';font-size: 22px;
+    }
+
+    /* Make top header icons and text white */
+    .top-header-meta a {
+        color: #ffffff !important;
+        font-size: medium;
+    }
+    .top-header-meta i {
+        color: #ffffff !important;
+        font-size: medium;
+    }
+
+    /* Transparent navbar at top */
+    .alazea-main-menu {
+        background-color: transparent;
+        transition: background-color 0.3s ease;
+    }
+
+    /* Green navbar when scrolled */
+    .header-area .is-sticky .alazea-main-menu {
+        background-color: #47774d !important;
+        box-shadow: 0 5px 50px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Keep menu text visible on transparent background */
+    .classynav ul li a {
+        color: #ffffff !important;
+    }
+</style>
+</head>
+
+<body>
+    <!-- Preloader -->
+    {{ bootstrap.load_js() }}
+    
+    <div class="preloader d-flex align-items-center justify-content-center">
+        <div class="preloader-circle"></div>
+        <div class="preloader-img">
+            <img src="static/img/core-img/leaf.png" alt="">
+        </div>
+    </div>
+
+    <!-- ##### Header Area Start ##### -->
+    <header class="header-area">
+
+        <!-- ***** Top Header Area ***** -->
+        <div class="top-header-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="top-header-content d-flex align-items-center justify-content-between">
+                            <!-- Top Header Content -->
+                            <div class="top-header-meta">
+                                <a href="#" data-toggle="tooltip" data-placement="bottom" title=""><i class="fa fa-envelope-o" aria-hidden="true"></i> <span style="font-size: medium;">Email: avanii.for.earth@gmail.com</span></a>
+                                <a href="#" data-toggle="tooltip" data-placement="bottom" title=""><i class="fa fa-phone" aria-hidden="true"></i> <span style="font-size: medium;">Call Us: +91 8595215662</span></a>
+                            </div>
+
+                            <!-- Top Header Content -->
+                            <div class="top-header-meta d-flex">
+                            <!-- Language Dropdown -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ***** Navbar Area ***** -->
+        <div class="alazea-main-menu">
+            <div class="classy-nav-container breakpoint-off">
+                <div class="container">
+                    <!-- Menu -->
+                    <nav class="classy-navbar justify-content-between" id="alazeaNav">
+
+                        <!-- Nav Brand -->
+                        <a href="{{url_for('home')}}" class="nav-brand"><img src="static/img/core-img/logo.png" style="width: 80px; height: 80px;"
+                        alt=""></a>
+
+                        <!-- Navbar Toggler -->
+                        <div class="classy-navbar-toggler">
+                            <span class="navbarToggler"><span></span><span></span><span></span></span>
+                        </div>
+
+                        <!-- Menu -->
+                        <div class="classy-menu">
+
+                            <!-- Close Button -->
+                            <div class="classycloseIcon">
+                                <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
+                            </div>
+
+                            <!-- Navbar Start -->
+                            <div class="classynav">
+                                <ul>
+                                    <li><a href="{{url_for('home')}}">Home</a></li>
+                                    <li><a href="{{url_for('contact')}}">Contact</a></li>
+                                    <li><a href="{{url_for('shop')}}">Shop</a></li>
+                                    <!-- <li><a href="{{url_for('about')}}">About</a></li> -->
+                                    <!-- <li><a href="shop.html">Shop</a></li> -->
+                                    <!-- <li><a href="portfolio.html">Portfolio</a></li> -->
+                                </ul>
+
+                    </nav>
+
+                    <!-- Search Form -->
+                    <div class="search-form">
+                        <form action="#" method="get">
+                            <input type="search" name="search" id="search" placeholder="Type keywords &amp; press enter...">
+                            <button type="submit" class="d-none"></button>
+                        </form>
+                        <!-- Close Icon -->
+                        <div class="closeIcon"><i class="fa fa-times" aria-hidden="true"></i></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- ##### Header Area End ##### -->
+
